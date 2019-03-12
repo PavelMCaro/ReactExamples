@@ -1,0 +1,25 @@
+{
+    "parser": "typescript-eslint-parser",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+        "typescript",
+        "react"
+    ],
+    "extends": "eslint-config-und",
+    "rules":{
+      "no-unused-vars": ["error", { 
+          "vars": "all", 
+          "args": "after-used", 
+          "ignoreRestSiblings": false 
+        }],
+      "no-console": "off",
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "typescript/no-unused-vars": "error"
+    }
+  }
